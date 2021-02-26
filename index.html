@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Dz_10</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="contain">
+	<!--action="email.php" method="GET/POST" ДЛЯ ОТПРАВКИ ФОРМЫ, POST ДЛЯ ОТПРАВКИ НА ПОЧТУ enctype="multipart/form-data" - ЧТОБ ФОРМА УМЕЛА КУШАТЬ ФАЙЛЫ --> 
+	 <form method="GET" class="form" enctype="multipart/form-data" action="#">
+
+
+		<div class="form_line">
+			<div class="form__input">
+				<label for="disable_input" class="label">Выключенный input</label>
+				<input required id="disable_input" disabled value="Вася не полетит на сервер :`(" class="input" type="text">
+	</div></div>
+
+	<!-- Disabled - отключает поле, Value - значение по умолчанию, Placeholder - надпись на поле, подсказка, maxlength - max длина строки -->
+
+
+			<div class="form_line">
+					<div class="form__input">
+						<label for="text_input" class="label">Текст</label>
+						<input required id="text_input" class="input" type="text">
+			</div></div>
+	
+	
+
+			<div class="form_line">
+					<div class="form__input">
+						<label for="number_input" class="label">Число</label>
+						<input required id="number_input" placeholder="введите число" class="input" type="number">
+			</div></div>
+
+			
+
+			<div class="form_line">
+				<div class="form__input">
+					<label for="tel_input" class="label">Номер телефона</label>
+					<input required id="tel_input"  minlength="12" maxlength="12" placeholder="380" class="input" type="tel">
+		</div></div>
+
+
+		<div class="form_line">
+			<div class="form__input">
+				<label for="time_input" class="label">Время</label>
+				<input required id="time_input" value="00:00"  class="input" type="time">
+	</div></div>
+
+	<div class="form_line">
+		<div class="form__input">
+				<label class="label" for="date_input">Дата</label>
+			<!-- value и placeholder не работают с датой, placeholder не работает со временем-->
+			<input required id="date_input" value="01.01.2001" class="input" type="date">
+</div></div>
+
+
+<div class="form_line">
+	<div class="form__input">
+		<label class="label" for="password_input">Укажите пароль</label>
+		<input required id="password_input" placeholder="Укажите пароль" class="input" type="password">
+</div></div>
+
+<div class="form_line">
+	<div class="form__input">
+		<label class="label" for="email_input">Укажите почту</label>
+		<input required id="email_input" placeholder="Укажите почту" class="input" type="email">
+</div></div>
+
+
+
+<h2>***КРАФТОВЫЙ CHECKBOX, RADIO***</h2>
+
+<div class="form_line">
+	<div class="form__input">
+		<div class="checkbox">
+			<input name="work" required id="work_input_new"  class="input_checkbox" type="checkbox">
+			<label class="checkbox_label" for="work_input_new">Работаю</label>
+		
+		
+	</div>
+	</div>
+	<div class="form__input">
+		<div class="checkbox">
+			<input name="work" required id="study_input_new"  class="input_checkbox" type="checkbox">
+			<label class="checkbox_label" for="study_input_new">Учусь</label>
+		
+		
+	</div>
+	</div></div>
+
+	<div class="form_line">
+		<div class="form__input">
+			<div class="radiobox">
+				<input name="work" required id="work_input_new1"  class="input_checkbox1" type="radio">
+				<label class="checkbox_label1" for="work_input_new1">Работаю</label>
+			
+			
+		</div>
+		</div>
+		<div class="form__input">
+			<div class="radiobox">
+				<input name="work" required id="study_input_new1"  class="input_checkbox1" type="radio">
+				<label class="checkbox_label1" for="study_input_new1">Учусь</label>
+			
+			
+		</div>
+		</div></div>
+
+	<h2>***ОБЫЧНЫЙ CHECKBOX, RADIO***</h2>
+
+	<div class="form_line">
+		<div class="form__input">
+			<label class="label" for="work_input">Работаю</label>
+			<input name="work" required id="work_input"  class="input_box" type="checkbox">
+		</div>
+			<div class="form__input">
+				<label class="label" for="study_input">Учусь</label>
+				<input name="study" required id="study_input"  class="input_box" type="checkbox">
+	</div></div>
+<div class="form_line">
+	<div class="form__input">
+		<label class="label" for="season1_input">Осень</label>
+		<input value="autumn" name="season" required id="season1_input"  class="input_box" type="radio">
+	</div>
+	<div class="form__input">
+		<label class="label" for="season2_input">Зима</label>
+		<input value="winter" name="season" required id="season2_input"  class="input_box" type="radio">
+	</div>
+	<div class="form__input">
+		<label class="label" for="season3_input">Весна</label>
+		<input value="spring" name="season" required id="season3_input"  class="input_box" type="radio">
+	</div>
+	<div class="form__input">
+		<label class="label" for="season4_input">Лето</label>
+		<input value="summer" name="season" required id="season4_input"  class="input_box" type="radio">
+	</div>
+</div>
+
+
+<div class="form_line">
+	<div class="form__input">
+		<label class="label" for="family1_input">Сам</label>
+		<input value="alone" name="family" required id="family1_input"  class="input_box" type="radio">
+	</div>
+	<div class="form__input">
+		<label class="label" for="family2_input">С семьей</label>
+		<input value="with family" name="family" required id="family2_input"  class="input_box" type="radio">
+	</div>
+	</div>
+
+
+	<div class="form_line">
+		<div class="form__input">
+			
+			<textarea class="input"  name="message" minlength="30" maxlength="200" ></textarea>
+		</div>
+	</div>
+
+
+
+	<div class="form_line">
+		<div class="form__input">
+			<label for="file" class="label_file"> Выбeрите файл</label>
+			<input accept=".exe, .txt, .png, .jpg" class="input_file "  name="file" type="file" id="file" ></input>
+		</div>
+	</div>
+
+<!--multiple позволит выбрать несколько пунктов в select-->
+
+	<select name="select" class="form_select">
+	<option value="1">1</option>
+	<option value="2">2</option>
+	<option value="3">3</option>
+	<option value="4">4</option>
+	<option value="5">5</option>	
+	</select>
+
+
+<!-- tabindex - для последовательности табулируемых объектов -->
+	
+		<button tabindex="1" type="submit">Отправить</button>
+		</form>
+
+	</div>
+</body>
+</html>
